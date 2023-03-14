@@ -8,4 +8,7 @@
 1. git status (verificar situação)
 2. se vermelho -> git add .
 3. se verde -> git commit -m "nome do commit"
-4. se td ok! git push
+4. se td ok! git push (atualiz no github)
+
+#_____________ ANGULAR
+ng new nome-projeto (criar um projeto)
