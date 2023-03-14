@@ -1,0 +1,4 @@
+1. instalar o NodeJS (noejs.org)
+2. npm --version (check do nodejs instalado)
+3. instalar o angular (https://angular.io/guide)
+4. ng version (check angular instalado)
