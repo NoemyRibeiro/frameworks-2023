@@ -2,3 +2,10 @@
 2. npm --version (check do nodejs instalado)
 3. instalar o angular (https://angular.io/guide)
 4. ng version (check angular instalado)
+
+
+# _____________ Rotinas go GIT
+1. git status (verificar situação)
+2. se vermelho -> git add .
+3. se verde -> git commit -m "nome do commit"
+4. se td ok! git push
