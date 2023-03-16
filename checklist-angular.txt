@@ -1,7 +1,9 @@
 1. instalar o NodeJS (noejs.org)
 2. npm --version (check do nodejs instalado)
 3. instalar o angular (https://angular.io/guide)
+   3.1 npm install -g @angular/cli
 4. ng version (check angular instalado)
+
 
 
 # _____________ Rotinas go GIT
@@ -12,3 +14,5 @@
 
 #_____________ ANGULAR
 ng new nome-projeto (criar um projeto)
+
+ng serve -o (rodar e abrir o projeto - precisa estar dentro da pasta do projeto)

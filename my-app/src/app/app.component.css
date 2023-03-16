@@ -1,0 +1,13 @@
+.container {
+    background: linear-gradient(#fff, rgb(197, 153, 255));
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    
+}
+
+.img {
+    width: 500px;
+    height: 500px;
+}
