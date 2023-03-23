@@ -12,7 +12,14 @@
 3. se verde -> git commit -m "nome do commit"
 4. se td ok! git push (atualiz no github)
 
-#_____________ ANGULAR
+5. git clone endereço.git . (comando para copiar do github p local)
+5.1 npm install (dentro da pasta do projeto p instalar node_modules)
+
+_______________ PARA REMOVER USUÁRIO ANTERIOR _____________________
+
+git config --system 
+
+#_____________ ANGULAR (DENTRO DA PASTA DO PROJETO)
 ng new nome-projeto (criar um projeto)
 
 ng serve -o (rodar e abrir o projeto - precisa estar dentro da pasta do projeto)
