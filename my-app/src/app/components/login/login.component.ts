@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./login.component.css']
 })
 export class LoginComponent {
+  isError = false;
+
+  login(){
+    this.isError = true;
+  }
 
 }

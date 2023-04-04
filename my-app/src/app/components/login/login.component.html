@@ -2,6 +2,11 @@
 
  <div class="login">
     <h2>Sign In</h2>
+
+    <div *ngIf="isError" class="error">
+        <i class='bx bx-error'></i>
+        <span>User or password incorrect!</span>
+    </div>
     <div class="input">
         <i class='bx bx-envelope-open'></i>
         <input type="text" name="email" id="email" placeholder="E-mail">
@@ -9,7 +14,7 @@
 
     <div class="input">
         <i class='bx bx-lock-alt' ></i>
-        <input type="text" name="password" id="password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password">
         <i class='bx bxs-low-vision' ></i>
     </div>
 
@@ -21,7 +26,7 @@
         <h4>Forgot password?</h4>
     </div>
 
-    <button>SIGN IN</button>
+    <button (click)="login()">SIGN IN</button>
     <h3>Don't have an account? Create</h3>
         
   </div>

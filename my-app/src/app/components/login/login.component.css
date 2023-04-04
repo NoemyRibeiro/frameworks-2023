@@ -82,4 +82,24 @@ button {
     box-shadow: 5px 5px 10px #00000082;
     border: 0;
     color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(140%);
+}
+
+.error {
+    border: 2px solid tomato;
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(245, 145, 145);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.error i {
+    margin-right: 5px;
 }
