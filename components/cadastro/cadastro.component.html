@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="cadastro">
+       <h2>Create</h2>
+   
+       <div *ngIf="isError" class="error">
+           <i class='bx bx-error'></i>
+           <span>User or password incorrect!</span>
+       </div>
+       
+       <div *ngIf="isAprovado" class="aprovado">
+        <i class='bx bx-error'></i>
+        <span>User or password correct!</span>
+    </div>
+
+       <div class="input">
+           <i class='bx bx-envelope-open'></i>
+           <input type="text" 
+           name="email" id="email" 
+           placeholder="E-mail" >
+       </div>
+
+       <div class="input">
+        <i class='bx bxs-user-circle'></i>
+        <input type="text" name="email" id="email" placeholder="Usuário">
+    </div>
+   
+       <div class="input">
+           <i class='bx bx-lock-alt' ></i>
+           <input type="password" name="password" id="password" placeholder="Password">
+           <i class='bx bxs-low-vision' ></i>
+       </div>
+
+       <div class="input">
+           <i class='bx bx-lock-alt' ></i>
+           <input type="password" name="password" id="password" placeholder="ConfirmPassword">
+           <i class='bx bxs-low-vision' ></i>
+       </div>
+   
+       <div class="remember">
+       <button (click)="login()">Cadastre-se</button>
+       <button (click)="login()">Cancelar cadastro</button>
+
+    </div>
+</div>

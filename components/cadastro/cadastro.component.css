@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,300&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+.container {
+    background: #9733ff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cadastro {
+    background: #fff;
+    width: 450px;
+    height: 450px;
+    box-shadow: 10px 10px 50px 10px rgba(69, 9, 82, 0.464);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input {
+    box-shadow: 3px 3px 10px 5px rgba(69, 9, 82, 0.458) ;
+    width: 350px;
+    height: 45px;
+    border-radius: 15px;
+    margin: 20px;
+    padding-left: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.input input {
+    width: 270px;
+    height: 30px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+}
+
+i {
+    font-size: 25px;
+    color: #7f0ef8;
+}
+
+.remember {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    justify-content: space-between;
+}
+
+.remember > div {
+    display: flex;
+    gap: 5px;
+}
+
+h2 {
+    margin: 15px;
+}
+
+h3 {
+    color: #999;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+h4 {
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    margin: 30px;
+    border-radius: 20px;
+    background: linear-gradient(#902aef, #5820ff);
+    box-shadow: 5px 5px 10px #00000082;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(140%);
+}
+
+.error {
+    border: 2px solid tomato;
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(245, 145, 145);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.error i {
+    margin-right: 5px;
+}
+
+.aprovado {
+    border: 2px solid rgb(56, 217, 58);
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(145, 245, 150);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.aprovado i {
+    margin-right: 5px;
+}
+
