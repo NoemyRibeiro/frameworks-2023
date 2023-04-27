@@ -1,0 +1,42 @@
+.container {
+    width: 80%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    margin: 0 auto;
+}
+
+.content {
+    background: #fafafd;
+    border: 1px solid black;
+}
+
+.user-info {
+    display: grid;
+    grid-template-rows: 150px 200px 1fr;
+    
+}
+
+.profile {
+    background: rgb(225, 206, 210);
+    display: grid;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px;
+}
+
+.profile .img {
+    width: 80px;
+    height: 80px;
+    background: rgb(158, 53, 53);
+    border-radius: 50%;
+}
+
+.member {
+    background: rgb(116, 64, 116);
+}
+
+.menu {
+    background: rgb(116, 162, 209);
+}
