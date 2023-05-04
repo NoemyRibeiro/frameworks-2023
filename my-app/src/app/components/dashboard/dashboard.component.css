@@ -1,18 +1,26 @@
+:root{
+  --bg-menu: #e2e9ef;
+
+  --shadow: #696969;
+}
+
+
 .container {
-    width: 80%;
+    width: 90%;
     height: 100vh;
     display: grid;
-    grid-template-columns: 300px 1fr;
-    margin: 0 auto;
+    grid-template-columns: 200px 1fr 350px;
+    margin: 20px;
     box-shadow: 3px 3px 15px #696969;
+    border-radius: 10px
 }
 
 
 .user-info {
     display: grid;
-    grid-template-rows: 150px 200px 1fr;
-    
-    
+    grid-template-rows: 150px 1fr;
+
+
 }
 
 .profile {
@@ -26,12 +34,12 @@
 .profile .img {
     width: 80px;
     height: 80px;
-    background: rgb(100, 53, 158);
+    background: rgb(131, 36, 103);
     border-radius: 50%;
 }
 
 .member {
-    background: rgb(116, 64, 116);
+    background: rgb(191, 147, 165);
 }
 
 /* .menu {
@@ -39,7 +47,7 @@
 } */
 
 .user-info .menu {
-    background: #fafafd;
+    background: #f7f8fa;
 }
 
 .user-info .menu li  {
@@ -48,13 +56,13 @@
 }
 
 .user-info .menu li i {
-    color: #696969;
+    color: var(--shadow);
     font-size: 16px;
     margin-right: 15px;
 }
 
 .user-info .menu li a {
-    color: #696969;
+    color: var(--shadow);
     font-size: 16px;
     margin-right: 15px;
     text-decoration: none;
@@ -63,27 +71,55 @@
 
 .content {
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    background: #f6f6f6;
+    grid-template-rows: 100px 200px 1fr;
+    padding: 40px;
 }
 
-.content .box-1 {
-    background: #a6d7c9;
-    display: grid;
+.content .search {
+  display: grid;
+  grid-template-columns: 150px auto;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.content .box-2 {
-    background: #9b7aad;
+.content .search .input {
+  background: #f1f8ff;
+  display: flex;
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
 }
 
-.content .box-3 {
-    background: #dcde5f;
+.content .search .input input {
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+  height: 30px;
+  width: 160px;
+  outline: none;
 }
 
-.content .box-4 {
-    background: #5f76de;
+.content .search .input .icon {
+  height: 100%;
+  width: 35px;
+  color: #f1f8ff;
+  font-size: 24px;
+  background: #6555e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
 }
 
-.li:houver {
-    background: rgb(107, 174, 187);
+.menu li:hover {
+    background: rgb(226, 193, 223);
+}
+
+.user,
+.user-info {
+  background: #f7f8fa;
+  border-radius: 5px;
 }
