@@ -10,7 +10,7 @@
     height: 100vh;
     display: grid;
     grid-template-columns: 200px 1fr 350px;
-    margin: 20px;
+    margin: 20px auto;
     box-shadow: 3px 3px 15px #696969;
     border-radius: 10px
 }
@@ -31,11 +31,19 @@
     padding: 10px;
 }
 
-.profile .img {
-    width: 80px;
-    height: 80px;
-    background: rgb(131, 36, 103);
+.profile .img img {
+    width: 90px;
+    height: 90px;
     border-radius: 50%;
+    
+}
+
+.profile .img {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
 }
 
 .member {
@@ -115,11 +123,106 @@
 }
 
 .menu li:hover {
-    background: rgb(226, 193, 223);
+    background: #c1c1c1;
 }
 
 .user,
 .user-info {
   background: #f7f8fa;
   border-radius: 5px;
+}
+
+.content .info{
+  display: grid;
+  grid-template-columns: 2.7fr 1.3fr;
+  gap: 30px;
+}
+
+
+.content .info .box1{
+  background: #fadbbd;
+}
+
+.content .info .box2{
+  background: #f0ecfe;
+}
+
+.content .adm {
+  display: grid;
+  grid-template-columns: 1.4fr 1.1fr;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.content .adm .team {
+  background: #e1deff;
+}
+
+.content .adm .task {
+  background: #deffe8;
+}
+
+.content .adm .team .title {
+  background: #e5f7f0;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  border-radius: 5px;
+}
+
+.content .adm .team .title span {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.content .adm .team .title .ball {
+  background: #43af74;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px 0 25px;
+}
+
+.content .adm .team .title .ball i {
+  color: #fff;
+  font-size: 22px;
+}
+
+.container .user {
+  display: grid;
+  gap: 10px;
+  grid-template-rows: 100px 180px 120px 1fr;
+
+}
+
+/* .container .user div{
+  background: #afeae2;
+} */
+
+.container .user .item-1{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 35px;
+  
+}
+.container .user .item-1 i{
+  font-size: 25px;
+  margin: 0  10px;
+  color: #696969;
+}
+
+.container .user .item-2 img {
+  width: 100px;
+  border-radius: 50px;
+}
+
+.container .user .item-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
