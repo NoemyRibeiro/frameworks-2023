@@ -31,20 +31,21 @@
     padding: 10px;
 }
 
-.profile .img img {
-    width: 90px;
-    height: 90px;
+.profile .img {
+    width: 80px;
+    height: 80px;
     border-radius: 50%;
+    background: #b855e2;
     
 }
-
+/* 
 .profile .img {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+   */
 
-}
 
 .member {
     background: rgb(191, 147, 165);
@@ -217,7 +218,9 @@
 
 .container .user .item-2 img {
   width: 100px;
-  border-radius: 50px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 15px;
 }
 
 .container .user .item-2 {
@@ -226,3 +229,50 @@
   justify-content: center;
   align-items: center;
 }
+
+.container .user .item-2 h5 {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #5848d2;
+}
+
+.container .user .item-3 {
+  display: grid;
+  place-items: center;
+}
+
+
+
+.container .user .item-3 .box {
+  width: 90%;
+  height: 100px;
+  background: #f0edff;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+}
+
+.container .user .item-3 .box .ball {
+ border-radius: 50%;
+ width: 50px;
+ height: 50px ;
+ background: #fff;
+ display: grid;
+ place-items: center;
+}
+
+.container .user .item-3 .box .ball i {
+  font-size: 24px;
+  color: #5848d2;
+
+}
+
+.container .user .item-3 .box .box-1, .container .user .item-3 .box .box-2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+
