@@ -7,14 +7,19 @@
         <i class='bx bx-error'></i>
         <span>User or password incorrect!</span>
     </div>
+
+    <div *ngIf="isCorrect" class="correct">
+        <i class='bx bx-user-check' ></i><span>User or password correct</span>
+    </div>
+
     <div class="input">
         <i class='bx bx-envelope-open'></i>
-        <input type="text" name="email" id="email" placeholder="E-mail">
+        <input type="text" name="email" id="email" placeholder="E-mail" [(ngModel)]="user"/>
     </div>
 
     <div class="input">
         <i class='bx bx-lock-alt' ></i>
-        <input type="password" name="password" id="password" placeholder="Password">
+        <input type="password" name="password" id="password" placeholder="Password" [(ngModel)]="pwd" />
         <i class='bx bxs-low-vision' ></i>
     </div>
 

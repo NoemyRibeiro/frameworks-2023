@@ -16,8 +16,14 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
 h5 {
   font-size: 12px;
+  font-weight: 500, 
   
 }
 
@@ -102,8 +108,8 @@ h5 {
 
 .content {
     display: grid;
-    grid-template-rows: 100px 200px 1fr;
-    padding: 30px;
+    grid-template-rows: 60px 150px 1fr;
+    padding: 0 20px;
 }
 
 .content .search {
@@ -177,8 +183,28 @@ h5 {
   margin-top: 30px;
 }
 
-.content .adm .team {
-  background: #e1deff;
+.content .adm .team .box {
+  display: grid;
+  background: #f8fafd;
+  margin: 10px 0;
+  border-radius: 8px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content .adm .team .box .member {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  margin: 0 15px 0 25px;
+  align-items: center;
+  padding: 15px;
+  background: transparent;
+  
+}
+
+.content .adm .team .box .member img {
+  width: 50px;
+  height: 45px;
+  margin-right: 15px;
 }
 
 .content .adm .task {
@@ -274,12 +300,12 @@ h5 {
 }
 
 .container .user .item-3 .box .ball {
- border-radius: 50%;
- width: 50px;
- height: 50px ;
- background: #fff;
- display: grid;
- place-items: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px ;
+  background: #fff;
+  display: grid;
+  place-items: center;
 }
 
 .container .user .item-3 .box .ball i {

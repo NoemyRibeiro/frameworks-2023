@@ -103,3 +103,14 @@ button:hover {
 .error i {
     margin-right: 5px;
 }
+
+.correct {
+    border: 2px solid rgb(54, 221, 21);
+    margin-top: 5px;
+    width: 280px;
+    height: 40px;
+    background: rgb(145, 245, 150);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
