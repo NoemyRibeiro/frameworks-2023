@@ -8,6 +8,7 @@ import { LoginComponent } from './components/login/login.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormsModule } from '@angular/forms';
+import { TaskComponent } from './components/task/task.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FormsModule } from '@angular/forms';
     HeroComponent,
     LoginComponent,
     PageNotFoundComponent,
-    DashboardComponent
+    DashboardComponent,
+    TaskComponent
   ],
   imports: [
     BrowserModule,
