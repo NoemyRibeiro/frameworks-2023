@@ -7,42 +7,57 @@
 
 .container{
   height: 100vh;
-  background: #fde4fd96;
+  background: white;
   margin: 0 auto;
   display: flex;
   place-items: center;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  background-image: url("https://media.istockphoto.com/id/1160849866/video/blue-and-pink-neon-beams-light-frame-light-up.jpg?s=640x640&k=20&c=Gk8XuSvyvIoXQxFJJK5z1alRC4jorl-kga1Hhk0mSKw=")
   
 }
 
 .task {
   width: 500px;
-  height: 500px;
+  height: 600px;
   display: flex;
   align-items: center;
   padding: 50px;
-  border-radius: 30px;
+  border-radius: 15px;
   justify-content: center;
   flex-direction: column;
-  background: white;
+  background: rgb(60, 71, 139);
+  color: white;
   animation: fade-in 1s ease-in-out;
 }
 
 
 .button button {
-  width: 180px;
-  height: 40px;
-  margin-bottom: 20px;
-  border-radius: 20px;
-  border: none;
-  box-shadow: 2px 2px 10px #3c0945;
+  width: 185px;
+  height: 35px;
+  border-radius: 15px;
+  display: flex;
+  border: 0;
+  box-shadow: 2px 2px 10px #995fa3;
   background: linear-gradient(60deg, #e07adc, #a74acc);
   color: #fff;
   cursor: pointer;
-  margin: 10px;
   padding: 5px;
+  margin: 5px;
+
+}
+
+.container .form-group {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  margin-top: 20px;
+  align-items: center;
+  padding: 50px;
+  border-radius: 30px;
+  animation: fade-in 1s ease-in-out;
+  
+
 }
 
 
@@ -55,9 +70,19 @@
   justify-content: space-between;
 }
 
+.container .form-group input{
+  margin: 15px;
+  padding: 5px;
+  height: 40px;
+  font-size: 15px;
+  outline: none;
+  border: 0.4px solid rgb(165, 69, 255);
+  border-radius: 10px;
+}
+
 .container .form-group label{
   font-size: 20px;
-  color: #000000;
+  color: white;
 }
 
 @keyframes fade-in{

@@ -1,26 +1,31 @@
 <div class="container">
     <div class="task">
-        <h2>Forms</h2>
+        <h2>Formulário</h2>
         <form>
-
-            Nome da Task: <input type="text" name="NomedaTask" id="NomedaTask" placeholder="NomedaTask">
-            <br>
-            Descrição da Task: <input type="text" name="NomedaTask" id="NomedaTask" placeholder="NomedaTask">
-            <br>
-            Responsável da Task: <input type="text" name="NomedaTask" id="NomedaTask" placeholder="NomedaTask">
-            <br>
-            Data de Término: <input type="date" name="NomedaTask" id="NomedaTask" placeholder="NomedaTask">
-            <br>
-            Data da Criação: <input type="date" name="NomedaTask" id="NomedaTask" placeholder="NomedaTask">
-        </form>
-
-        <div class="button">
-            <button>Cancelar</button>
-            <button>Cadastrar</button>
-          </div>
         
-
-    </div>
-
-
-   
+            <div class="form-group">
+                <label for="txtNome">Task</label>
+                <input type="text" name="txtNome" id="txtNome" placeholder="Digete o nome da tarefa" [formControl]="task">
+            
+                <label for="txtDesc">Descrição</label>
+                <input type="text" name="txtDesc" id="txtDesc" placeholder="Digete a descrição da tarefa" [formControl]="descricao">
+            
+                <label for="txtResp">Responsável</label>
+                <input type="text" name="txtResp" id="txtResp" placeholder="Digete o responsável da tarefa" [formControl]="responsavel">
+            
+                <label for="txtInicio">Data Início</label>
+                <input type="date" name="txtInicio" id="txtInicio" [formControl]="dt_inicio" >
+            
+                <label for="txtFim">Data Termino</label>
+                <input type="date" name="txtFim" id="txtFim" [formControl]="dt_fim">
+                
+    
+                <div class="button">
+                <button>Cancelar</button>
+                <button (click)="addTask()">Cadastrar</button>
+            </div>
+            
+            </div>
+            
+            </form>
+            </div>
