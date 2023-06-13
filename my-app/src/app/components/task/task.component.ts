@@ -17,7 +17,11 @@ export class TaskComponent {
   dt_fim = new FormControl('')
 
   addTask( ) {
-    console.log(this.task)
+    console.log(this.task.value)
+    console.log(this.descricao.value)
+    console.log(this.responsavel.value)
+    console.log(this.dt_inicio.value)
+    console.log(this.dt_fim.value)
   }
 
 
