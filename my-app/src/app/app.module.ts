@@ -9,7 +9,7 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { TaskComponent } from './components/task/task.component';
-
+import { TaskService } from './components/task.service';
 
 @NgModule({
   declarations: [
@@ -18,15 +18,10 @@ import { TaskComponent } from './components/task/task.component';
     LoginComponent,
     PageNotFoundComponent,
     DashboardComponent,
-    TaskComponent
+    TaskComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule,
-    ReactiveFormsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
+  providers: [TaskService],
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
